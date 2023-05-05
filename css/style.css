@@ -30,3 +30,13 @@
     size: 10px;
     align-items: center;
 }
+.button{
+    width: 150px;
+    background-color: brown;
+    color: white;
+    font-weight: bolder;
+}
+.h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}

@@ -1,0 +1,217 @@
+
+                bottom: 0;
+                opacity: 1;
+                
+
+                            transform: translate(-50%,-50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    box-shadow: 2px 2px 5px 5px black;
+
+
+
+    <script>
+        document.querryselector(#show-signup).addEventListener("click",function(){
+          document.querrySelector("popup").classList.add("active");
+        });
+        document.querrySelector(".popup .close-btn").addEventListener("click",function(){
+          document.querrySelector(".popup").classList.remove("active");
+        })
+      </script>
+        
+        
+        .centre{
+            position: relative;
+            right: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .centre button{
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: 800;
+            color: #0004ff;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .popup{
+            position: relative;
+            bottom: 0;
+            opacity: 0;
+            right: 50%;
+            transform: translate(-50%,-50%) scale(1.25);
+            width: 380px;
+            padding: 20px 30px;
+            box-shadow: 2px 2px 5px 5px black;
+            
+        
+        
+          
+        }
+        .close-btn{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            background-color: aliceblue;
+            color: red;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-weight: bolder;
+        }
+        .form h2{
+             text-align: center;
+             color: black;
+             margin: 10px 0px 20px;
+             font-size: 25px;
+        }
+        .form-element label{
+            font-size: 15px;
+            color: black;
+        .form-element input{
+            margin-top: 5px;
+            display: block;
+            width: 100px;
+            padding: 10px;
+            border-radius: 5px
+            
+            
+        }
+        }
+  
+        <button class="open-button" onclick="openForm()">Open Form</button>
+        <div class="popup">
+          <div class="close-btn">&times;</div>
+          <div class="form">
+            <h2>Sign Up</h2>
+            <div class="form-element">
+              <label for=" First Name"> First Name </label>
+              <input type="text" name="" id="" placeholder="Enter first name">
+            </div>
+            <div class="form-element">
+              <label for="Last Name"> Last Name </label>
+              <input type="Last Name" name="" id="" placeholder="Enter last name">
+            </div>
+            <div class="form-element">
+              <label for="Email"> Email </label>
+              <input type="email" name="" id="" placeholder="Enter Email">
+            </div>
+            <div class="form-element">
+              <label for="Id Number"> Id Number </label>
+              <input type="Id Number" name="" id="" placeholder="Enter Id number">
+            </div>
+            <div class="form-element">
+              <label for="Phone Number"> Phone Number </label>
+              <input type="text" name="" id="" placeholder="Enter Phone Number">
+            </div>
+            <div class="form-element">
+              <label for="Gender"> Gender </label>
+              <select name="Gender" id="">Select
+                <option value="">Male</option>
+                <option value="">Female</option>
+              </select>
+            </div>
+            <div class="form-element">
+              <label for="Phone Number"> Phone Number </label>
+              <input type="text" name="" id="" placeholder="Enter Phone Number">
+            </div>
+            <div class="form-element">
+              <label for="password"> Password</label>
+              <input type="password" name="" id="" placeholder="Enter Password">
+            </div>
+            <div class="form-element">
+              <label for=" Confirm password">Confirm Password</label>
+              <input type="password" name="" id="" placeholder="Confirm Password">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--Sign up form ends here-->
+    
+}
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: #eb5555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+.centre{
+    position: absolute;
+    right: 50%;
+    Bottom: 0%;
+}
+.centre button{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: blue;
+    cursor: pointer;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.popup{
+    position: absolute;
+    bottom: 0%;
+    opacity: 0;
+    right: 50%;
+    transform: translate(-50%,-50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    box-shadow: 2px 2px 5px 5px black;
+    transition: bottom 0ms ease-in-out 200ms
+                opacity 200ms ease-in-out 0ms
+                transform 200ms ease-in-out 0ms
+}
+.popup active{
+    width: 380px;
+    padding: 20px 30px;
+    box-shadow: 2px 2px 5px 5px black;
+    transform: translate(-50%,-50%) scale(1);
+    transition: bottom 0ms ease-in-out 0ms
+                opacity 200ms ease-in-out 0ms
+                transform 20ms ease-in-out 0ms
+}
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: aliceblue;
+    color: red;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.form h2{
+     text-align: center;
+     color: black;
+     margin: 10px 0px 20px;
+     font-size: 25px;
+}
+.form-element label{
+    font-size: 15px;
+    color: black;
+.form-element input{
+    margin-top: 5px;
+    display: block;
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px
+    
+

@@ -30,6 +30,76 @@ li a{
 li a:hover{
     color: white;
 }
+.modal{
+    align-items: center;
+    background-color: cornsilk;
+    width: 100%;
+}
+#modal-header{
+    background-color: aqua;
+    color: black;
+    padding: 25px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.modal-body h3{
+    color: black;
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    margin: 30px 0;
+}
+.form-group{
+    margin: 20px 0;
+    width: 50%;  
+    margin-left: 12.5%;
+    height: 50%;
+    bac
+    box-shadow: 10px black;
+  }
+.form-group label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.form-group input{
+    width: 100%;
+    padding: 10px 20px;
+    line-height: 20px;
+    align-self: center;
+    
+}
+#modal-open{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: background 0.3s;
+    font-size: 25px;
+    text-transform: uppercase;
+    background-color: rgb(133, 133, 84);
+    color: white;
+}
+.close-modal{
+    font-size: 50px;
+    float: right;
+    color: red;
+    cursor: pointer;
+    float: inline-end;
+}
+.submit{
+    font-size: 20px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 6px;
+    width: 50%;
+    height: 30px;
+    transition: background 0.3s;
+    margin-left: 12.5%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 .Logincontainer{
     margin: auto;
     width: 500px;
@@ -88,18 +158,35 @@ li a:hover{
     cursor: pointer;
     font-weight: bolder;
 }
-.form-element{
+.form-group{
     background-color: antiquewhite;
     width: 50%;
     height: 100%;
     padding: 10px;
     box-shadow: 0 8px 16px black;
     color: black;
-    align-self: center;
+    align-self: left;
     margin-right: 50px;
     align-self: end;
 }
-.form input{
+.form-group input{
     width: 100%;
     line-height: 25px;
+}
+.button{
+    align-items: center;
+    left: 50%;
+    background-color: rgb(209, 198, 198);
+    color: black;
+    margin: 20px;
+}
+#modal-open{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: background 0.3s;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: white;
 }
